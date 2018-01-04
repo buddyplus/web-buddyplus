@@ -22,10 +22,10 @@
     function load() {
       if (GBrowserIsCompatible()) {
         var map = new GMap2(document.getElementById("gmap"));
-        map.setCenter(new GLatLng(35.696,139.767), 17);
-        var marker = new GMarker(new GLatLng(35.6947,139.76481));
+        map.setCenter(new GLatLng(35.6945,139.765), 18);
+        var marker = new GMarker(new GLatLng(35.6947,139.7644));
         map.addOverlay(marker);
-        marker.openInfoWindowHtml("<strong>株式会社バディプラス</strong><br>〒101-0052<br>東京都千代田区神田小川町2-2-2　小川町B5ビル5F<br>TEL：03-6740-7380　FAX：03-5283-8442<br><br>　※このビルの５階です。");
+        marker.openInfoWindowHtml("<strong>株式会社バディプラス</strong><br>〒101-0052<br>東京都千代田区神田小川町2-4-5 杉商ビル8F<br>TEL：03-6740-7380　FAX：03-6730-9523<br><br>　※このビルの８階です。");
         var ctrlObj1 = new GLargeMapControl();
         map.addControl(ctrlObj1);
         var ctrlObj2 = new GMapTypeControl();
@@ -43,6 +43,6 @@
     </script>
   </head>
   <body onload="load()" onunload="GUnload()">
-    <div id="gmap"　　></div>
+    <div id="gmap"　　　　></div>
   </body>
 </html>
